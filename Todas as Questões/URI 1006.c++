@@ -10,6 +10,7 @@ int main() {
     cin >> c;
 
     m = (((a * 2) + (b * 3) + (c * 5)) / 10);
-    cout << setprecision(2) << "MEDIA = " << m << endl;
+    cout << fixed << setprecision(1);
+    cout << "MEDIA = " << m << endl;
     return 0;
 }
