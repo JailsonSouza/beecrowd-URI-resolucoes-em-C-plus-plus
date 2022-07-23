@@ -3,16 +3,15 @@
 using namespace std;
 
 int main() {
-    int dist;
-    double tot_comb, cons_med;
+    double x1, y1, x2, y2, dist;
 
-    cin >> dist;
-
-    cin >> tot_comb;
+    cin >> x1 >> y1;
+    cin >> x2 >> y2;
     
-    cons_med = (dist / tot_comb);
+    dist = sqrt(((pow((x2- x1), 2) + pow((y2 - y1), 2))));
     
-    cout << fixed << setprecision(3);
-    cout << cons_med << " km/l" << endl;
+    cout << fixed << setprecision(4);
+    cout << dist << endl;
+    
     return 0;
 }
