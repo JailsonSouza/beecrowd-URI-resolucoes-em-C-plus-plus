@@ -1,18 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    
-    scanf("%d", &n);
+    int n1, n2, n3;
 
+    scanf("%d %d %d", &n1, &n2, &n3);
     
-    
-    printf("%d\n", n);
-    printf("%d nota(s) de R$ 100,00\n", n100);
-    printf("%d nota(s) de R$ 50,00\n", n50);
-    printf("%d nota(s) de R$ 20,00\n", n20);
-    printf("%d nota(s) de R$ 10,00\n", n10);
-    printf("%d nota(s) de R$ 5,00\n", n5);
-    printf("%d nota(s) de R$ 2,00\n", n2);
-    printf("%d nota(s) de R$ 1,00\n", n1);
+    if ((n1 < n2) && (n1 < n3) && (n2 < n3)){
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n1, n2, n3, n1, n2, n3);
+    } else if((n1 < n2) && (n1 < n3) && (n3 > n2)){
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n1, n3, n2, n1, n2, n3);
+    } else if((n2 < n1) && (n2 < n3) && (n1 < n3)){
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n2, n1, n3, n1, n2, n3);
+    } else if((n2 < n1) && (n2 < n3) && (n1 > n3)){
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n2, n3, n1, n1, n2, n3);
+    } else if((n3 < n1) && (n3 < n2) && (n1 < n2)){
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n3, n1, n2, n1, n2, n3);
+    } else if((n3 < n1) && (n3 < n2) && (n1 > n2)){
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n3, n2, n1, n1, n2, n3);
+    }
     return 0;
 }

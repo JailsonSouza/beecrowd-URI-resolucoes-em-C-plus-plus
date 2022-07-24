@@ -1,11 +1,13 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
     int c, q;
     double p, tot;
-    
-    scanf("%d %d", &c, &q);
 
+    cin >> c >> q;
+    
     if (c == 1){
         p = 4.00;
     } else if (c == 2){
@@ -17,7 +19,9 @@ int main() {
     } else if (c == 5){
         p = 1.50;
     }
+
     tot = p * q;
-    printf("Total: R$ %.2lf\n", tot);
+    cout << fixed << setprecision(2);
+    cout << "Total: R$ " << tot << endl;
     return 0;
 }
