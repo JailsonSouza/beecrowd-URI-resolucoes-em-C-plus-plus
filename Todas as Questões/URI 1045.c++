@@ -21,12 +21,15 @@ int main() {
         cout << "NAO FORMA TRIANGULO" << endl;
     } else if ((a*a) == ((b*b)+(c*c))){
         cout << "TRIANGULO RETANGULO" << endl;
-    }else if ((a*a) > ((b*b)+(c*c))):
-        print('TRIANGULO OBTUSANGULO')
-    if ((a*a) < ((b*b)+(c*c))):
-        print('TRIANGULO ACUTANGULO') 
-    if ((a == b) and (b == c) and(c == a)):
-        print('TRIANGULO EQUILATERO')
-    elif (((a == b) and (b == a)) or ((b == c) and (c == b)) or ((c == a) and (a == c))):
-        print('TRIANGULO ISOSCELES')
+    }else if ((a*a) > ((b*b)+(c*c))){
+        cout << "TRIANGULO OBTUSANGULO" << endl;
+    }
+    if ((a*a) < ((b*b)+(c*c))){
+        cout << "TRIANGULO ACUTANGULO" << endl;
+    }
+    if ((a == b) and (b == c) and(c == a)){
+        cout << "TRIANGULO EQUILATERO" << endl;
+    }else if (((a == b) and (b == a)) or ((b == c) and (c == b)) or ((c == a) and (a == c))){
+        cout << "TRIANGULO ISOSCELES" << endl;
+    }
 }
