@@ -1,22 +1,25 @@
-#include <stdio.h>
-
-int main() {
-    int n1, n2, n3;
-
-    scanf("%d %d %d", &n1, &n2, &n3);
+a, b, c = input().split(" ")
+a = float(a)
+b = float(b)
+c = float(c)
+if ((b>a)and(b>c)):
+    aux = (b)
+    b = (a)
+    a = (aux)
+if ((c>a)and(c>b)):
+    aux = (c)
+    c = (a)
+    a = (aux)
     
-    if ((n1 < n2) && (n1 < n3) && (n2 < n3)){
-        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n1, n2, n3, n1, n2, n3);
-    } else if((n1 < n2) && (n1 < n3) && (n3 > n2)){
-        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n1, n3, n2, n1, n2, n3);
-    } else if((n2 < n1) && (n2 < n3) && (n1 < n3)){
-        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n2, n1, n3, n1, n2, n3);
-    } else if((n2 < n1) && (n2 < n3) && (n1 > n3)){
-        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n2, n3, n1, n1, n2, n3);
-    } else if((n3 < n1) && (n3 < n2) && (n1 < n2)){
-        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n3, n1, n2, n1, n2, n3);
-    } else if((n3 < n1) && (n3 < n2) && (n1 > n2)){
-        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n", n3, n2, n1, n1, n2, n3);
-    }
-    return 0;
-}
+if (a >= (b+c)):
+    print('NAO FORMA TRIANGULO')
+elif ((a*a) == ((b*b)+(c*c))):
+    print('TRIANGULO RETANGULO')
+elif ((a*a) > ((b*b)+(c*c))):
+    print('TRIANGULO OBTUSANGULO')
+if ((a*a) < ((b*b)+(c*c))):
+    print('TRIANGULO ACUTANGULO') 
+if ((a == b) and (b == c) and(c == a)):
+    print('TRIANGULO EQUILATERO')
+elif (((a == b) and (b == a)) or ((b == c) and (c == b)) or ((c == a) and (a == c))):
+    print('TRIANGULO ISOSCELES')
