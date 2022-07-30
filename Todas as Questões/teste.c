@@ -1,9 +1,19 @@
-hi, hf = input().split(" ")
+hi,mi,hf,mf = input().split(" ")
 hi = int(hi)
 hf = int(hf)
-if (hi > hf):
-  print('O JOGO DUROU',((24 - hi) + hf),'HORA(S)')
-elif (hi < hf):
-  print('O JOGO DUROU',(hf-hi),'HORA(S)')
-else:
-  print('O JOGO DUROU 24 HORA(S)')
+mi = int(mi)
+mf = int(mf)
+hr = (24)
+he = (0)
+if :
+  print(')
+elif :
+  print(')
+elif :
+  print('')
+elif :
+  )
+elif :
+  )
+elif :
+  
